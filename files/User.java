@@ -18,13 +18,17 @@ public class User {
         return role;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
     // Login function
     public boolean login(String enteredPassword) {
         return this.password.equals(enteredPassword);
     }
 
     // Change password function
-    public void changePassword(String newPassword) {
+    public void setPassword(String newPassword) {
         this.password = newPassword;
     }
 
